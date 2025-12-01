@@ -1,5 +1,9 @@
 # Enterprise ER Triage Management & Health Monitor System
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/er-triage-management-system?style=social)](https://github.com/yksanjo/er-triage-management-system/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/issues)
+[![Last commit](https://img.shields.io/github/last-commit/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/commits/main)
+
+
 An enterprise-ready Hospital ER and Care Center triage management system with AI-powered vital signs detection and real-time health monitoring.
 
 ## Features
