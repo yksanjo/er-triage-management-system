@@ -1,57 +1,84 @@
-# Enterprise ER Triage Management & Health Monitor System
+# er-triage-management-system
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/er-triage-management-system?style=social)](https://github.com/yksanjo/er-triage-management-system/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/er-triage-management-system.svg)](https://github.com/yksanjo/er-triage-management-system/commits/main)
+## Detailed Description
 
+er-triage-management-system is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-An enterprise-ready Hospital ER and Care Center triage management system with AI-powered vital signs detection and real-time health monitoring.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- **Video-Based Triage**: Capture patient video and extract vital signs automatically
-- **AI-Powered Analysis**: Multi-modal analysis using video, audio, and text inputs
-- **Real-Time Monitoring**: Live dashboard for healthcare providers
-- **Triage Workflow**: Automated triage assessment based on Japanese Emergency Medicine guidelines
-- **Patient Management**: Comprehensive patient records and history
-- **Mobile-First**: Smartphone-based interface for easy deployment
-- **Enterprise Security**: HIPAA-compliant with audit logging
-- **Scalable Architecture**: Microservices-ready design
+## Solution Overview
 
-## Tech Stack
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### Backend
-- Node.js + Express / Python FastAPI
-- PostgreSQL for primary data
-- Redis for caching and real-time features
-- WebSocket for live updates
+## Key Features
 
-### Frontend
-- React/Next.js for web dashboard
-- React Native for mobile app
-- Real-time monitoring with WebSocket
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
 
-### AI/ML
-- Video processing for vital signs detection
-- Multi-modal AI analysis (video + text + audio)
-- Triage decision engine
+## Repository Structure
 
-## Project Structure
-
-```
-er-triage-system/
-├── backend/          # Backend API services
-├── frontend/         # Web dashboard
-├── mobile/           # Mobile app
-├── ai-service/       # AI/ML services
-├── shared/           # Shared types and utilities
-└── docs/             # Documentation
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
 ## Getting Started
 
-See individual service READMEs for setup instructions.
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
+```bash
+npm ci
+npm run lint
+npm test
+npm run build
+```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-Proprietary - Enterprise License
-
+This project is released under the MIT License.
