@@ -1,5 +1,12 @@
 # er-triage-management-system
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/er-triage-management-system/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/er-triage-management-system/actions)
+![License](https://img.shields.io/github/license/yksanjo/er-triage-management-system)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/er-triage-management-system)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/er-triage-management-system)
+
 ## Detailed Description
 
 er-triage-management-system is maintained as an industry-grade software project with production-ready engineering practices.  
