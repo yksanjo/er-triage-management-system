@@ -171,6 +171,10 @@ export class AuthController {
       throw new Error('JWT_SECRET not configured');
     }
 
+    const signOptions: jwt.SignOptions = {
+      expiresIn: (process.env.JWT_EXPIRES_IN || '24h') as jwt.SignOptions['expiresIn'],
+    };
+
     return jwt.sign(
       {
         userId,
@@ -179,9 +183,7 @@ export class AuthController {
         facilityId,
       },
       jwtSecret,
-      {
-        expiresIn: process.env.JWT_EXPIRES_IN || '24h',
-      }
+      signOptions
     );
   }
 }

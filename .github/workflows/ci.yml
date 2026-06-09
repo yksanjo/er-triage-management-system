@@ -6,11 +6,32 @@ on:
     branches: [main, master]
 
 jobs:
-  markdown:
+  backend:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
     steps:
       - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v18
+      - uses: actions/setup-node@v4
         with:
-          globs: |
-            **/*.md
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Build (tsc)
+        run: npm run build
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Build (next build)
+        run: npm run build

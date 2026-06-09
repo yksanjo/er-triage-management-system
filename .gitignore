@@ -12,6 +12,8 @@ ENV/
 # Build outputs
 dist/
 build/
+.next/
+next-env.d.ts
 *.log
 *.tsbuildinfo
 
